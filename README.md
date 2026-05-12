@@ -52,3 +52,4 @@ Live Coins.ph prediction:
 - `app/main.py`: CLI entry point
 
 Prediction logic and decision logic are intentionally separate. BUY is not mapped directly from UP; final decisions require trend, RSI, ATR, volume, and no-trade conditions.
+ 

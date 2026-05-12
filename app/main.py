@@ -27,6 +27,8 @@ def generate_signal(
     decision = decide(next_candle_probabilities, market_state)
 
     return format_signal(
+        symbol=symbol,
+        current_price=float(latest_row["close"]),
         next_candle_probabilities=next_candle_probabilities,
         decision_probabilities=decision.decision_probabilities,
         final_decision=decision.final_decision,
